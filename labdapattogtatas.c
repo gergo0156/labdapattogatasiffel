@@ -17,7 +17,7 @@ main ( void )
     int mx;
     int my;
 
-    for ( ;; ) {
+    while(1) {
 
         getmaxyx ( ablak, my , mx );
 
@@ -25,6 +25,8 @@ main ( void )
 
         refresh ();
         usleep ( 100000 );
+
+        clear();
 
         x = x + xlepes;
         y = y + ylepes;
